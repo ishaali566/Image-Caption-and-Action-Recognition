@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Captioning & Action Recognition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ Image Captioning & Action Recognition</h1>
+        <p class="subtitle">Upload an image to get AI-powered captions and action recognition</p>
+
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*" style="display: none;">
+            <button id="uploadBtn" class="upload-btn">Choose Image</button>
+            <p id="fileName" class="file-name"></p>
+        </div>
+
+        <div id="imagePreview" class="image-preview"></div>
+
+        <button id="analyzeBtn" class="analyze-btn" style="display: none;">Analyze Image</button>
+
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Analyzing image...</p>
+        </div>
+
+        <div id="results" class="results" style="display: none;">
+            <h2>Results</h2>
+
+            <div class="result-section">
+                <h3>📝 Image Caption</h3>
+                <p id="caption" class="caption"></p>
+
+                <h4>Top Predictions:</h4>
+                <div id="captionPredictions" class="predictions"></div>
+            </div>
+
+            <div class="result-section">
+                <h3>🎬 Action Recognition</h3>
+                <div id="actionResult" class="action-result"></div>
+
+                <h4>Detected Classes:</h4>
+                <div id="actionPredictions" class="predictions"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

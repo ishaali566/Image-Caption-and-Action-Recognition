@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# Datasets (VERY IMPORTANT)
+datasets/
+
+# Trained models
+models/saved_models/
+
+# Cache
+models/__pycache__/
+
+# IDE
+.idea/
